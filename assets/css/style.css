@@ -1,0 +1,47 @@
+body{
+    background-image:url('https://inspirationhut.net/wp-content/uploads/2013/05/201.png');
+    font-family: cursive;
+    font-size: 25px;
+    align-content: center;
+}
+h1{
+    color: turquoise;
+}
+form{
+    text-align: center;
+}
+.giphy img{
+   margin-left: auto;
+   margin-right:auto;
+   display:block;
+   text-align: center;
+}
+.animalButton{
+background:pink;
+font-family: cursive;
+font-size: 20px;
+margin:5px;
+border-radius: 25%;
+}
+p{
+    text-align: center;
+}
+#submit{
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size:20px;
+    padding: 2%;
+    border: 3px solid black;
+    border-radius: 40%;
+    background-color:purple;
+    color:white;
+
+}
+#animal_input{
+margin:2%;
+width:20%;
+height: 24px;
+}
+#panel{
+    text-align:center;
+}
