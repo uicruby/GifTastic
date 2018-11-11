@@ -11,45 +11,7 @@ function button() {
         $("#panel").prepend(button);
     }
     addgif();
-    //addSound();
 };
-function addSound() {
-
-    $('#submit').on('click', function (e) {
-        e.preventDefault();
-        //    var p=$(this).data('name');
-        //    var query    ="GET https://www.googleapis.com/youtube/v3/search" + p + "AIzaSyDj8nQkKtYUX1DyaGo6E43_gywHp4xWoSY";
-
-        //    $.ajax({
-        //     url: query,
-        //     method: 'GET',
-        //     part: 'snippet',
-        //     p: 'surfing',
-        //     type:'video'
-        // })
-        // .done(function(responseSong){
-        // var resultSong=responseSong.data;
-        // console.log(resultSong);
-        var chanelName='uic.ruby';
-        var request = gapi.client.youtube.search.list({
-            q: encodeURIComponent($("#animal_input").val()).replace(/%20/g, "+"),
-            order: 'viewcount',
-            part: 'snippet',
-            type: 'video',
-            maxResults: 3,
-            publishedAfter: "2015-01-01T00:00:00Z",
-            forUsername: chanelName
-
-        });
-request.execute(function(response){
-console.log(response);
-});
-
-    });
-}
-addSound();
-
-
 
 // made a function to display giphy's
 function addgif() {
